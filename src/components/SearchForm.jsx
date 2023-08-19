@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function SearchForm() {
   return (
-    <form method="post" className="w-full" action="/searchResults">
+    <form method="post" className="w-full " action="/searchResults">
       <div className="form-control">
         <label htmlFor="keyword">Keyword</label>
         <input type="text" name="keyword" id="keyword" />
@@ -25,10 +27,18 @@ export default function SearchForm() {
       </div>
 
       <div className="form-control">
-        <button className="w-1/2" id="primary-btn" type="submit">
+        {/* <button className="w-1/2" id="primary-btn" type="submit">
           {" "}
           Search{" "}
-        </button>
+        </button> */}
+        <Link
+          className="w-1/2 text-center "
+          id="primary-btn"
+          to="/searchResults"
+        >
+          {" "}
+          Search{" "}
+        </Link>
       </div>
     </form>
   );

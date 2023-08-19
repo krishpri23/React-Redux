@@ -9,14 +9,15 @@ import {
 import RootLayout from "./layout/rootLayout";
 
 //pages
-import HomePage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
+import SearchResults from "./pages/SearchResults";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<HomePage />} />
-      {/* <Route path="searchResults" element={<SearchResults />} /> */}
+      <Route index element={<Home />} />
+      <Route path="searchResults" element={<SearchResults />} />
 
       {/* <Route path="create" element={<CreateLayout />} />
       <Route path="login" element={<Login />} action={loginAction} />

@@ -5,15 +5,15 @@ import SearchForm from "./SearchForm";
 export default function HeroSection() {
   return (
     <section className="w-screen bg-indigo-100 ">
-      <img
+      {/* <img
         src={background}
         sizes="100vw"
         alt="sunrise"
         className="opacity-70 px-2 "
-      />
+      /> */}
 
       {/* Hero title */}
-      <div className=" flex flex-col md:flex-row md:justify-between items-center">
+      <div className=" flex flex-col md:flex-row md:justify-between gap-16 items-center">
         <div className="text-5xl mx-5 my-10 font-semibold md:w-1/2">
           <h1> Find your service provider locally! </h1>
           <p className="text-sm my-5 text-gray-400">

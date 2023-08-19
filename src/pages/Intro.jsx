@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import banner from "/sb-banner.png";
 
-export default function HomePage() {
+export default function Intro() {
   return (
     <main>
       {/* Landing page  */}
