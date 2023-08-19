@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  nav {
+    @apply w-screen px-1 py-2;
+  }
+
+  .form-control {
+    @apply flex flex-col;
+  }
+  label {
+    @apply font-semibold;
+  }
+  input,
+  select {
+    @apply border-2 border-slate-700 rounded-md px-4 py-2 my-3 w-1/2;
+  }
+  a,
+  #primary-btn {
+    @apply bg-black text-white px-5 py-3 rounded-xl;
+  }
+  #secondary-btn {
+    @apply border-2 border-black px-5 py-2 bg-white text-black font-semibold hover:text-blue-600 hover:border-blue-600;
+  }
+}
