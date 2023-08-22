@@ -1,0 +1,54 @@
+{
+  "providers": [
+    {
+      "id": 1,
+      "profilePicture": "/provider1.png",
+      "name": "Ravi Iyer",
+      "services": [
+        "Aayush Homam",
+        "Shastiaartha purthi",
+        "wedding",
+        "baby shower"
+      ],
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "experience": 2,
+      "languages": ["Tamil", "Telugu", "Kannada", "Malayalam", "English"],
+      "location": {
+        "address": "140 Peral Ave",
+        "city": "Morgan Hill",
+        "zipcode": 95037,
+        "country": "USA"
+      }
+    },
+    {
+      "id": 2,
+      "profilePicture": "/provider2.png",
+      "name": "Subash Nayyer",
+      "services": ["Aayush Homam", "wedding", "baby shower", "60th birthday"],
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "experience": 6,
+      "languages": ["Malayalam", "English"],
+      "location": {
+        "address": "1242 South shields Ave",
+        "city": "Mountain House",
+        "zipcode": 930952,
+        "country": "UK"
+      }
+    },
+    {
+      "id": 3,
+      "profilePicture": "/provider1.png",
+      "name": "Ramaseshu Iyer",
+      "services": ["Aayush Homam", "wedding", "baby shower"],
+      "experience": 10,
+      "languages": ["Tamil", "Telugu", "Kannada", "English"],
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "location": {
+        "address": "33 downtown street",
+        "city": "San Jose",
+        "zipcode": 952273,
+        "country": "USA"
+      }
+    }
+  ]
+}
