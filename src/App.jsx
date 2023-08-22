@@ -12,16 +12,18 @@ import RootLayout from "./layout/rootLayout";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import SearchResults from "./pages/SearchResults";
+import SearchResultDetail from "./pages/SearchResultDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="searchResults" element={<SearchResults />} />
+      <Route path="searchResults/:id" element={<SearchResultDetail />} />
 
       {/* <Route path="create" element={<CreateLayout />} />
       <Route path="login" element={<Login />} action={loginAction} />
-      <Route path="logout" element={<Logout />} action={logoutAction} /> */}
+  <Route path="logout" element={<Logout />} action={logoutAction} /> */}
 
       <Route path="*" element={<NotFound />} />
     </Route>

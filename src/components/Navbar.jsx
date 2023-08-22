@@ -1,19 +1,22 @@
-import { Link } from "react-router-dom";
-import Logo from "/sb-logo.png";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "/logo.png";
 
 export default function Navbar() {
   return (
     <nav>
       <div className="flex justify-between">
-        <img src={Logo} alt="sb-logo" className="mix-blend-normal" />
+        <Link to="/" className="bg-white p-0 m-0">
+          <img src={Logo} alt="sb-logo" className="w-18 h-12" />
+        </Link>
         <ul className="flex gap-10 items-center">
-          <Link id="secondary-btn" href="/register">
+          <NavLink id="secondary-btn" href="/register">
             {" "}
             <li>Register </li>
-          </Link>
-          <Link id="secondary-btn" href="/logout">
+          </NavLink>
+
+          <NavLink id="secondary-btn" href="/logout">
             <li>Logout</li>
-          </Link>
+          </NavLink>
         </ul>
       </div>
     </nav>
