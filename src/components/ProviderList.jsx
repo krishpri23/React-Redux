@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ProviderList({ name, bio, profile, experience }) {
   const screenWidth = window.innerWidth;
   return (
-    <div className=" flex flex-col my-3 px-10 py-3  md:flex md:flex-row md:gap-10 md:px-20 md:py-5 md:mx-5 md:my-3 bg-red-100">
+    <div className=" flex flex-col my-3 px-10 py-3  md:flex md:flex-row md:gap-10 md:px-20 md:py-5 md:mx-5 md:my-3 bg-white ">
       {/* image */}
       <div>
         <img src={profile} alt="priest" />
@@ -12,13 +12,12 @@ export default function ProviderList({ name, bio, profile, experience }) {
 
       {/* provider content */}
       <div className="flex flex-col gap-4 ">
-        <h1>{name}</h1>
+        <h2>{name}</h2>
         <p> {experience}+ years of experience </p>
         <p className={screenWidth < 760 ? "truncate" : null}>{bio}</p>
-        <Link to="#" className="w-1/4 justify-self-end ">
-          {" "}
-          View Profile{" "}
-        </Link>
+      </div>
+      <div className="flex items-center justify-center w-3/4">
+        <Link to="#"> View Profile </Link>
       </div>
     </div>
   );

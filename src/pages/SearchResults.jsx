@@ -6,7 +6,7 @@ export default function SearchResults() {
   console.log(jsonData.providers);
 
   return (
-    <main className=" w-screen flex flex-row gap-5 ">
+    <main className=" w-screen flex flex-row gap-5 bg-slate-100 ">
       {/* Filter section */}
       <section className="w-1/4 bg-blue-900 text-white ">
         <h1> search section </h1>
