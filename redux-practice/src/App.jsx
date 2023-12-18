@@ -1,10 +1,10 @@
-import "./App.css";
+import Counter from "./features/Counter/Counter";
 
 function App() {
   return (
-    <div>
-      <h1> hello </h1>
-    </div>
+    <main className="bg-slate-200 mx-auto">
+      <Counter />
+    </main>
   );
 }
 
