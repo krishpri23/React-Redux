@@ -22,13 +22,14 @@ const postsSlice = createSlice({
         state.push(action.payload);
       },
       // prepare callback helps in customising the resulting payload
-      prepare(title, content) {
+      prepare(title, content, userId) {
         return {
           // For add posts button
           payload: {
             id: nanoid(),
-            title: title,
-            content: content,
+            title,
+            content,
+            userId,
           },
         };
       },
@@ -37,6 +38,8 @@ const postsSlice = createSlice({
 });
 
 // In case the structure changes it is easy to make change just in one place
+// posts here represents the state of the store
 export const selectAllPosts = (state) => state.posts;
 export default postsSlice.reducer;
+// postsSlice.actions is an object containing the action creators, so {} destructuring
 export const { postAdded } = postsSlice.actions;
