@@ -16,5 +16,5 @@ export default function PostAuthor({ userId }) {
     return Number(user.id) === Number(userId);
   });
   console.log("author", author);
-  return <span>{author ? author.name : "Unknown"}</span>;
+  return <span> By {author ? author.name : "Unknown"}</span>;
 }
